@@ -1,7 +1,12 @@
+[![Deploy to Elastic Beanstalk](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml/badge.svg)](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml)
+
+
 # Sample GraphQL API
 
 A complete GraphQL backend built with Node.js (TypeScript), Prisma, and SQL Server.
 Deployed to AWS with full CI/CD automation via GitHub Actions.
+
+**You can check the deployed endpoint here: https://graphql-mgr-hwazedfzhtexagca.southeastasia-01.azurewebsites.net/graphql**
 
 ---
 
