@@ -1,4 +1,4 @@
-[![Deploy to Elastic Beanstalk](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml/badge.svg)](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml)
+[![Deploy to Azure App Service](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml/badge.svg)](https://github.com/mirzaevolution/graphql-test/actions/workflows/pipeline.yml)
 
 
 # Sample GraphQL API
