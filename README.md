@@ -4,7 +4,7 @@
 # Sample GraphQL API
 
 A complete GraphQL backend built with Node.js (TypeScript), Prisma, and SQL Server.
-Deployed to AWS with full CI/CD automation via GitHub Actions.
+Deployed to Azure App Service (Node.JS) with full CI/CD automation via GitHub Actions.
 
 **You can check the deployed endpoint here: https://graphql-mgr-hwazedfzhtexagca.southeastasia-01.azurewebsites.net/graphql**
 
@@ -16,7 +16,7 @@ Deployed to AWS with full CI/CD automation via GitHub Actions.
 - Apollo Server (GraphQL)
 - Prisma ORM
 - SQL Server (via AWS RDS)
-- AWS Elastic Beanstalk
+- Azure App Service (Node.JS)
 - GitHub Actions (CI/CD)
 
 ---
@@ -84,9 +84,9 @@ Each with cascading delete and reordering on remove.
 
 ---
 
-## AWS Deployment
+## App Deployment
 
-- Elastic Beanstalk (Node.js 20)
+- Azure App Service (Node.JS)
 - RDS SQL Server (public, port 1433)
 - Configure DATABASE_URL as environment variable
 
@@ -95,17 +95,16 @@ Build and zip:
 npm run build
 zip -r deploy.zip dist node_modules package.json .env prisma
 
-Upload to EB dashboard.
+Upload to Azure App Service dashboard.
 
 ---
 
 ## GitHub Actions CI/CD
 
-.github/workflows/deploy.yml auto-deploys on main push.
+[CI/CD GitHub Actions Dashboard](https://github.com/mirzaevolution/graphql-test/blob/master/.github/workflows/pipeline.yml)
 
 Secrets required:
-- AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
+- AZURE_WEBAPP_PUBLISH_PROFILE
 
 ---
 
