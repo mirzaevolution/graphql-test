@@ -26,7 +26,7 @@ jobs:
 
       - name: Zip Deploy Package (no .env)
         run: |
-          zip -r deploy.zip dist node_modules package.json prisma
+          zip -r deploy.zip dist node_modules package.json prisma Procfile
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v20
