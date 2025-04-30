@@ -6,7 +6,8 @@
 A complete GraphQL backend built with Node.js (TypeScript), Prisma, and SQL Server.
 Deployed to Azure App Service (Node.JS) with full CI/CD automation via GitHub Actions.
 
-**You can check the deployed endpoint here: https://graphql-mgr-hwazedfzhtexagca.southeastasia-01.azurewebsites.net/graphql**
+**You can check the deployed endpoint here: 
+https://graphql-mgr-hwazedfzhtexagca.southeastasia-01.azurewebsites.net/graphql**
 
 ---
 
