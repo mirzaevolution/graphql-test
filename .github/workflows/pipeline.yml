@@ -24,18 +24,12 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Zip Deploy Package (no .env)
-        run: |
-          zip -r deploy.zip dist node_modules package.json prisma Procfile
+      - name: Zip application for deployment
+        run: zip -r app.zip dist node_modules package.json prisma
 
-      - name: Deploy to Elastic Beanstalk
-        uses: einaregilsson/beanstalk-deploy@v20
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
         with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: mgr-graphql
-          environment_name: Mgr-graphql-env
-          region: ap-southeast-1
-          version_label: ${{ github.run_id }}
-          deployment_package: deploy.zip
-          wait_for_deployment: false
+          app-name: woodwideweb-api                # Replace with your App Service name
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: app.zip
