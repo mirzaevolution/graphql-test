@@ -33,8 +33,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: graphql-test-mgr
-          environment_name: Graphql-test-mgr-env
+          application_name: mgr-graphql
+          environment_name: Mgr-graphql-env
           region: ap-southeast-1
           version_label: ${{ github.run_id }}
           deployment_package: deploy.zip
